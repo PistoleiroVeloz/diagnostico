@@ -1,0 +1,172 @@
+/* Importação da fonte Inter */
+@import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap');
+
+/* Reset de estilos globais e definição da fonte padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Configuração do HTML e Body */
+html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 16px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+
+/* Estilização de cabeçalhos */
+h1 {
+    font-weight: bolder;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 150%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    line-height: 150%;
+    color: #333;
+}
+
+h3 {
+    margin-bottom: 10px;
+    line-height: 150%;
+}
+
+/* Estilização de parágrafos */
+p {
+    line-height: 180%;
+}
+
+/* Estilização de links */
+a {
+    text-decoration: none;
+}
+
+/* Estilização de blockquotes */
+blockquote {
+    box-shadow: 0 5px 40px -20px rgba(9, 9, 16, .2) !important;
+    margin: 0;
+    padding: 20px 20px 5px;
+}
+
+blockquote p:before {
+    color: #afd5fc;
+    content: "!";
+    float: left;
+    font-size: 20pt;
+    font-weight: 700;
+    margin: 0 20px 10px 10px;
+}
+
+/* Container principal */
+.container {
+    max-width: 1485px !important;
+    margin: 0 auto;
+}
+
+/* Grade de dados */
+.row.data-grid div {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.row.data-grid div:nth-last-child(n+3) {
+    border-bottom: solid #0000001f;
+    border-width: thin;
+}
+
+.row.data-grid div:nth-child(odd) {
+    color: #000;
+    font-size: 9pt;
+    text-transform: uppercase;
+}
+
+/* Estilização dos cartões */
+.card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 40px !important;
+}
+
+.card h2:not(:first-child),
+.card h3:not(:first-child) {
+    margin-top: 20px !important;
+}
+
+.card h3 {
+    margin-bottom: 20px !important;
+}
+
+.card li {
+    margin-bottom: 10px;
+}
+
+/* Estilização de links dentro dos cartões */
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #0078D4;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color: #005A9E;
+}
+
+/* Estilização dos botões */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #0078D4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005A9E;
+}
+
+/* Botões do topo (se aplicável) */
+.icone-topo {
+    height: inherit !important;
+    padding: 16px !important;
+}
+
+.icone-topo .v-btn__content {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.icone-topo i {
+    padding-bottom: 13px !important;
+}
+
+/* Padding nas tabelas */
+table[cellpadding="10"] td,
+table[cellpadding="10"] th {
+    padding: 10px !important;
+}
